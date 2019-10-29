@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-29 08:30:46 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMDE7MjAxOS0xMC0yOTswNzoyODo1NCBBTTsyMjA0"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMDE7MjAxOS0xMC0yOTswODozMDo0NiBBTTsxNzsyMzYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="greeting" type="String" array="False" size=""/>
+            <assign variable="greeting" expression="&quot;Hello! Let's do addition&quot;"/>
+            <output expression="greeting" newline="True"/>
+            <output expression="&quot;Think of a number so we can add them together&quot;" newline="True"/>
+            <declare name="number1" type="Integer" array="False" size=""/>
+            <input variable="number1"/>
+            <declare name="great" type="String" array="False" size=""/>
+            <assign variable="great" expression="&quot;Great! now think of another number so we can add them together.&quot;"/>
+            <output expression="great" newline="True"/>
+            <declare name="number2" type="Integer" array="False" size=""/>
+            <input variable="number2"/>
+            <declare name="ruready" type="String" array="False" size=""/>
+            <assign variable="ruready" expression="&quot;LET'S FIND THE SUM!&quot;"/>
+            <output expression="ruready" newline="True"/>
+            <declare name="answer" type="Integer" array="False" size=""/>
+            <assign variable="answer" expression="number1+number2"/>
+            <output expression="answer" newline="True"/>
+            <output expression="&quot;AWESOME!!!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
