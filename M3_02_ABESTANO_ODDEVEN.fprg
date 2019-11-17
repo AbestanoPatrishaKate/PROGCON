@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sony"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-17 09:43:32 PM"/>
+        <attribute name="created" value="c29ueTtWQUlPOzIwMTktMTEtMTc7MDk6MDU6NTAgUE07MjA0NQ=="/>
+        <attribute name="edited" value="c29ueTtWQUlPOzIwMTktMTEtMTc7MDk6NDM6MzIgUE07ODsyMTYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hello! Let's determine if a number is an Odd or Even&quot;" newline="True"/>
+            <output expression="&quot;Think of an number then type it in for you find out, Let's Go!!!, &quot;" newline="True"/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <output expression="&quot;Terrific!&quot;" newline="True"/>
+            <output expression="&quot;and number is...&quot;" newline="True"/>
+            <declare name="oddeven" type="Integer" array="False" size=""/>
+            <assign variable="oddeven" expression="num % 2"/>
+            <if expression="oddeven ==0">
+                <then>
+                    <output expression="&quot;an Even&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;an Odd&quot;" newline="True"/>
+                </else>
+            </if>
+            <declare name="affirm" type="String" array="False" size=""/>
+            <assign variable="affirm" expression="&quot;Awesome!!!&quot;"/>
+            <output expression="affirm" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
