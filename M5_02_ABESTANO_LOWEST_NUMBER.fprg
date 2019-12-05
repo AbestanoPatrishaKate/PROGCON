@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sony"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-05 05:33:28 PM"/>
+        <attribute name="created" value="c29ueTtWQUlPOzIwMTktMTItMDU7MDM6MDI6NTQgUE07MjAzOA=="/>
+        <attribute name="edited" value="c29ueTtWQUlPOzIwMTktMTItMDU7MDU6MzM6MjggUE07MTU7MjIwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hello!!! Good day human, we're going to determine which of the number is the lowest&quot;" newline="True"/>
+            <output expression="&quot;Let's begin! type in 3 numbers for us to find out&quot;" newline="True"/>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <declare name="num3" type="Integer" array="False" size=""/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <input variable="num3"/>
+            <output expression="&quot;Fantastic!&quot;" newline="True"/>
+            <output expression="&quot;And the lowest number is.....&quot;" newline="True"/>
+            <output expression="&quot;Drumroll please......&quot;" newline="True"/>
+            <if expression="num3 &lt; num2">
+                <then>
+                    <output expression="num3" newline="True"/>
+                </then>
+                <else>
+                    <output expression="num2" newline="True"/>
+                    <if expression="num2 &lt; num1">
+                        <then>
+                            <output expression="num2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="num1" newline="True"/>
+                            <if expression="num1 &lt; num2">
+                                <then>
+                                    <output expression="num1" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="num2" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
