@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sony"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-05 11:05:07 AM"/>
+        <attribute name="created" value="c29ueTtWQUlPOzIwMTktMTItMDM7MDk6MTY6MDcgQU07MjAzMA=="/>
+        <attribute name="edited" value="c29ueTtWQUlPOzIwMTktMTItMDU7MTE6MDU6MDcgQU07Mjk7MjE4OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="greet" type="String" array="False" size=""/>
+            <assign variable="greet" expression="&quot;Hello! Please input your score to find the equivalent grade&quot;"/>
+            <output expression="greet" newline="True"/>
+            <declare name="grade" type="Integer" array="False" size=""/>
+            <input variable="grade"/>
+            <if expression="grade &gt;=95">
+                <then>
+                    <declare name="word7" type="String" array="False" size=""/>
+                    <assign variable="word7" expression="&quot;Outstanding!!! you got a perfect 4.0, Keep it up!!!&quot;"/>
+                    <output expression="word7" newline="True"/>
+                </then>
+                <else>
+                    <if expression="grade &gt;=91">
+                        <then>
+                            <declare name="word6" type="String" array="False" size=""/>
+                            <assign variable="word6" expression="&quot;Congratulations you passed and got a grade of 3.0!!!&quot;"/>
+                            <output expression="word6" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="grade &gt;=83">
+                                <then>
+                                    <declare name="word5" type="String" array="False" size=""/>
+                                    <assign variable="word5" expression="&quot;Congratulations you passed and got a grade of 2.5!!!&quot;"/>
+                                    <output expression="word5" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="grade &gt;=79">
+                                        <then>
+                                            <declare name="word4" type="String" array="False" size=""/>
+                                            <assign variable="word4" expression="&quot;Congratulations you passed and got a grade of 2.0!!!&quot;"/>
+                                            <output expression="word4" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="grade &gt;=75">
+                                                <then>
+                                                    <declare name="word3" type="String" array="False" size=""/>
+                                                    <assign variable="word3" expression="&quot;Congratulations you passed and got a grade of 1.5!!!&quot;"/>
+                                                    <output expression="word3" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="grade &gt;=70">
+                                                        <then>
+                                                            <declare name="word2" type="String" array="False" size=""/>
+                                                            <assign variable="word2" expression="&quot;Congratulations you passed and got a grade of 1.0!!!&quot;"/>
+                                                            <output expression="word2" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="grade &lt;=70">
+                                                                <then>
+                                                                    <declare name="word" type="String" array="False" size=""/>
+                                                                    <assign variable="word" expression="&quot;I am sorry to say but you got an R, Don't worry, Just do great next time!&quot;"/>
+                                                                    <output expression="word" newline="True"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="grade" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
